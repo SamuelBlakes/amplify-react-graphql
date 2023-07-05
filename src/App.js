@@ -1,25 +1,16 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
-import { Icon, Menu, Dropdown } from 'semantic-ui-react';
-
-function AuthStateApp() {
-  document.title = 'Travel Deals';
+function App() {
   return (
-        <div className='App'>
-          <Menu fixed='top' color='teal' inverted>
-            <Menu.Menu>
-              <Menu.Item header href='/'><Icon name='globe' />Travel Deals</Menu.Item>
-            </Menu.Menu>
-            <Menu.Menu position='right'>
-              <Dropdown item simple text='User Name'>
-                <Dropdown.Menu>
-                  <Dropdown.Item onClick={() => alert('Log-out')}><Icon name='power off' />Log Out</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Menu.Menu>
-          </Menu>
-        </div>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Hello from V2</h1>
+      </header>
+    </div>
   );
 }
-export default AuthStateApp;
+
+export default App;
